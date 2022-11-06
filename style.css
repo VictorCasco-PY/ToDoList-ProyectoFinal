@@ -1,0 +1,155 @@
+@keyframes pan {
+    100% {
+        background-position: 15% 50%;
+    }
+}
+
+@media(width >=500px) {
+    body {
+        padding: 0;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url('bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation:
+        pan 6s infinite alternate linear;
+}
+
+
+h1 {
+    text-align: center;
+    color: darkslategrey;
+    font-size: 40px;
+    height: 30px;
+}
+
+h3 {
+    text-align: center;
+    color: darkgrey;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    overflow: hidden;
+}
+
+input {
+    padding: 15px 10px;
+    outline: none;
+    width: 400px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+}
+
+li p {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 30%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    ;
+    padding: 30px;
+}
+
+.addTask {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.taskList {
+    background-color: white;
+    width: 100%;
+    color: darkslategray;
+    margin-top: 20px;
+}
+
+.btnAdd {
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    font-family: fantasy;
+    background-color: teal;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.btnAdd:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+}
+
+.btnChallenge {
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    font-family: fantasy;
+    background-color: rgb(228, 28, 28);
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.btnChallenge:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.btnDel {
+    margin-left: auto;
+    border: none;
+    background-color: #e31746;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 1.2em;
+}
+
+.btnDel:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+
+.noTasks {
+    color: darkslategray;
+}
